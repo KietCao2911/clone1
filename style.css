@@ -1,0 +1,164 @@
+*{
+	padding: 0; margin:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	transition: 0.25s;
+}
+ul{
+	list-style: none;
+}
+input{
+	width: 100%;
+	outline: none;
+}
+.wrap{
+	padding: 10px;
+	width: 70%;
+	height: 500px;
+	background-color: crimson;	
+	margin: 5% auto;
+	border-radius: 5px;
+}
+.wrap h1{
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	margin: 10px 0;
+}
+/*input start*/
+.group-input{
+	display: flex;
+	position: relative;
+	height: 70px;
+	align-items: center;
+	
+}
+.group-input input{
+	/*padding: 20px;*/
+	padding: 0 20px;	
+	height: 100%;
+	border-radius: 5px;
+	border:none;
+	margin-bottom: 5px;
+
+	
+
+}
+@keyframes warning{
+	from{
+		/*background-color: white;*/
+		transform: rotate(5deg);
+	}
+	
+}
+.icon-send{
+	font-size: 20px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/*inpuut end*/
+
+/*list start*/
+.list{
+	width: 100%;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: auto;
+	overflow-x: hidden;
+	
+}
+li{
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 60px;
+	background-color: white;
+	padding: 0 20px;
+	margin: 10px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+label{
+	/*width: 100%;*/
+	margin: 10px;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+/**/
+input[type='checkbox']{
+display: none;
+}
+
+
+/*input:checked +label::before{
+	position: absolute;
+	content:'\2713';
+	width: 30px;
+	height: 30px;
+	color: black;
+	left: -20px;
+}*/
+
+.container_content{
+	display: flex;
+	align-items: center;
+}
+
+
+
+.list{
+	/*display: none;*/
+}
+
+.check{
+
+color: red;
+
+}
+.icon-close{
+	cursor: pointer;
+	font-size: 20px;
+
+}
+.icon{
+	display: flex;
+	align-items: center;
+}
+.icon-close:hover{
+	font-size: 30px;
+	color: rgb(45, 154, 196);
+}
+.icon-checked{
+	display: none;
+	font-size: 30px;
+	color: rgb(14, 230, 50);
+}
+.toggle{
+	display: block;
+}
+.op{
+	opacity: 0.2;
+}
+/*responsive*/
+@media (max-width:450px){
+	.wrap{
+		width: 100%;
+	}
+	.icon-send{
+		font-size: 20px;
+	}
+}
+@media (max-width:768px){
+	.wrap{
+		width: 100%;
+	}
+}
